@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="profile-page">
+    <div class="profile-page-container">
+        <div class="profile-header">
+            <a href="index.html" class="back-btn" title="Volver al inicio">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="page-title">Mi Perfil</h1>
+        </div>
+
+        <div class="profile-content">
+            <!-- Profile Info Card -->
+            <div class="profile-info-card">
+                <div class="profile-avatar-large">
+                    <img src="https://i.pinimg.com/736x/bd/9d/3e/bd9d3e5cfcc119f4e00eab261c438b88.jpg" alt="Profile Avatar">
+                </div>
+                <div class="profile-details">
+                    <h2 class="profile-name">Juan Pérez</h2>
+                    <p class="profile-role">Profesor de Matemáticas</p>
+                    <p class="profile-email">juan.perez@educacion.com</p>
+                    <button class="edit-profile-btn">
+                        <i class="fas fa-edit"></i> Editar Perfil
+                    </button>
+                </div>
+            </div>
+
+            <!-- Earnings Dashboard -->
+            <div class="earnings-dashboard">
+                <h3 class="dashboard-title">Dashboard de Ganancias</h3>
+                
+                <div class="earnings-cards">
+                    <div class="earning-card">
+                        <div class="earning-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="earning-info">
+                            <span class="earning-label">Ganancias Totales</span>
+                            <span class="earning-value">$5,240.50</span>
+                        </div>
+                    </div>
+
+                    <div class="earning-card">
+                        <div class="earning-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="earning-info">
+                            <span class="earning-label">Este Mes</span>
+                            <span class="earning-value">$1,240.00</span>
+                        </div>
+                    </div>
+
+                    <div class="earning-card">
+                        <div class="earning-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="earning-info">
+                            <span class="earning-label">Promedio por Estudiante</span>
+                            <span class="earning-value">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="earning-card">
+                        <div class="earning-icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+                        <div class="earning-info">
+                            <span class="earning-label">Crecimiento</span>
+                            <span class="earning-value">+15.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Statistics -->
+            <div class="course-statistics">
+                <h3 class="dashboard-title">Estadísticas de Cursos</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Cursos Activos</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">151</span>
+                            <span class="stat-label">Estudiantes Totales</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">47</span>
+                            <span class="stat-label">Completados</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">Calificación Promedio</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-presentation"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">72</span>
+                            <span class="stat-label">Lecciones Creadas</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">Tasa de Finalización</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="recent-activity">
+                <h3 class="dashboard-title">Actividad Reciente</h3>
+                
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p class="activity-text">5 nuevos estudiantes se inscribieron</p>
+                            <span class="activity-time">Hace 2 horas</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p class="activity-text">Nuevo estudiante completó "Álgebra Básica"</p>
+                            <span class="activity-time">Hace 5 horas</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-message"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p class="activity-text">Recibiste 3 nuevos comentarios en tus cursos</p>
+                            <span class="activity-time">Hace 1 día</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p class="activity-text">Calificación promedio subió a 4.8 estrellas</p>
+                            <span class="activity-time">Hace 3 días</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

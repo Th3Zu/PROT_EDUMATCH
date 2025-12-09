@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videollamada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="videocall-page">
+    <a href="perfil.html" class="profile-card">
+        <div class="profile-info">
+            <h2 class="user-name">Juan Pérez</h2>
+            <div class="earnings-container">
+                <span class="earnings-label">Ganancias:</span>
+                <span class="earnings-amount">$5,240.50</span>
+            </div>
+        </div>
+        <div class="profile-avatar">
+            <img src="https://i.pinimg.com/736x/bd/9d/3e/bd9d3e5cfcc119f4e00eab261c438b88.jpg" alt="Profile Avatar">
+        </div>
+    </a>
+
+    <div class="videocall-container">
+        <!-- Left Panel - Assignment Info -->
+        <div class="assignment-panel">
+            <a href="alumnos.html" class="back-btn" title="Volver a alumnos">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h3 class="assignment-title">Materia que usa el alumno:</h3>
+            <div class="student-info-card">
+                <div class="student-info-avatar">
+                    <img src="https://i.pinimg.com/736x/bd/9d/3e/bd9d3e5cfcc119f4e00eab261c438b88.jpg" alt="Student Avatar">
+                </div>
+                <div class="student-info-details">
+                    <h4 class="student-name">Carlos González</h4>
+                    <p class="student-course">Álgebra Básica</p>
+                    <p class="student-time">Sesión: 09:00 AM</p>
+                </div>
+            </div>
+
+            <div class="assignment-content">
+                <h4>Temas a cubrir:</h4>
+                <ul class="assignment-list">
+                    <li>Resolución de ecuaciones lineales</li>
+                    <li>Sistemas de ecuaciones 2x2</li>
+                    <li>Problemas de aplicación</li>
+                </ul>
+            </div>
+
+            <div class="session-controls">
+                <button class="control-btn end-btn" title="Terminar sesión">
+                    <i class="fas fa-phone-slash"></i>
+                    <span>Terminar</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Center - Whiteboard -->
+        <div class="whiteboard-section">
+            <div class="whiteboard-header">
+                <h3>Pizarra del Profesor</h3>
+                <div class="whiteboard-tools">
+                    <button class="tool-btn" title="Lápiz" onclick="setDrawingTool('pen')">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="tool-btn" title="Borrador" onclick="setDrawingTool('eraser')">
+                        <i class="fas fa-eraser"></i>
+                    </button>
+                    <button class="tool-btn" title="Limpiar" onclick="clearWhiteboard()">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <canvas id="whiteboard"></canvas>
+        </div>
+
+        <!-- Right Panel - Video Avatars -->
+        <div class="participants-panel">
+            <h3 class="participants-title">Participantes</h3>
+            <div class="participants-container">
+                <!-- Teacher Avatar -->
+                <div class="participant-avatar teacher">
+                    <img src="https://i.pinimg.com/736x/bd/9d/3e/bd9d3e5cfcc119f4e00eab261c438b88.jpg" alt="Teacher">
+                    <div class="participant-info">
+                        <span class="participant-name">Juan Pérez</span>
+                        <span class="participant-role">Profesor</span>
+                    </div>
+                    <span class="status-indicator online"></span>
+                </div>
+
+                <!-- Student Avatar -->
+                <div class="participant-avatar student">
+                    <img src="https://i.pinimg.com/736x/bd/9d/3e/bd9d3e5cfcc119f4e00eab261c438b88.jpg" alt="Student">
+                    <div class="participant-info">
+                        <span class="participant-name">Carlos González</span>
+                        <span class="participant-role">Alumno</span>
+                    </div>
+                    <span class="status-indicator online"></span>
+                </div>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="participant-controls">
+                <button class="control-btn mic-btn active" title="Micrófono">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="control-btn camera-btn active" title="Cámara">
+                    <i class="fas fa-video"></i>
+                </button>
+                <button class="control-btn screen-btn" title="Compartir pantalla">
+                    <i class="fas fa-desktop"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="videocall.js"></script>
+</body>
+</html>
